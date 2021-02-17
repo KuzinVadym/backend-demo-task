@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskQuery returns task data 1`] = `
+Object {
+  "data": Object {
+    "task": Object {
+      "description": "description",
+      "status": "ToDo",
+      "title": "title",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`TaskQuery returns tasks data 1`] = `
+Object {
+  "data": Object {
+    "tasks": Array [
+      Object {
+        "description": "description",
+        "status": "ToDo",
+        "title": "title",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

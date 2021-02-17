@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+
+  mysql_db:
+    image: mysql:5.7
+    container_name: mysql_db
+    #command: mysqld --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: k2
+      MYSQL_USER: k2
+      MYSQL_PASSWORD: password
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_db_data_container:/var/lib/mysql
+    restart: unless-stopped
+
+  core:
+    build: ./
+    container_name: core
+    env_file:
+      - ./.env
+    depends_on:
+      - mysql_db
+    ports:
+      - "4000:4000"
+
+
+volumes:
+  mysql_db_data_container:

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersQuery returns user data 1`] = `
+Object {
+  "data": Object {
+    "user": Object {
+      "email": "email",
+      "login": "login",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`UsersQuery returns users data 1`] = `
+Object {
+  "data": Object {
+    "users": Array [
+      Object {
+        "email": "email",
+        "login": "login",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

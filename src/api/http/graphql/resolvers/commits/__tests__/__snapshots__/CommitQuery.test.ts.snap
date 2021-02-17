@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommitQuery returns task data 1`] = `
+Object {
+  "data": Object {
+    "commit": Object {
+      "status": "ToDo",
+      "taskId": 1,
+      "userId": 1,
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`CommitQuery returns tasks data 1`] = `
+Object {
+  "data": Object {
+    "commits": Array [
+      Object {
+        "status": "ToDo",
+        "taskId": 1,
+        "userId": 1,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
